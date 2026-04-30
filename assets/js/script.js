@@ -7,19 +7,21 @@ function createRandomColor() {
     return arr;
 }
 createRandomColor();
+console.log(createRandomColor());
 // CREATE BOX (with color array)
 let mainContent = document.querySelector(".main-content");
 
 function createColorBox(array) {
     let firstBox = document.createElement("div");
     firstBox.classList.add("div-style");
-    firstBox.style.backgroundColor = `rgb${array[0]}`;
+    firstBox.style.backgroundColor = `rgb(${array[0]},${array[1]},${array[2]})`;
     let secondBox = document.createElement("div");
     secondBox.classList.add("div-style");
-    secondBox.style.backgroundColor = `rgb${array[1]}`;
+    secondBox.style.backgroundColor = `rgb(${array[0]},${array[1]},${array[2]})`;
     let thirdBox = document.createElement("div");
     thirdBox.classList.add("div-style");
-    thirdBox.style.backgroundColor = `rgb${array[2]}`;
+    thirdBox.style.backgroundColor = `rgb(${array[0]},${array[1]},${array[2]})`;
+
     mainContent.append(firstBox, secondBox, thirdBox);
 }
-createColorBox(arr);
+createColorBox(createRandomColor());
