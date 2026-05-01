@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:"Montserrat",sans-serif ;
 }
 
 .header {
@@ -38,8 +39,7 @@
 }
 
 .main-content {
-    background-color: var(--dark-color);
-    height: 600px;
+    height: 800px;
 }
 
 .large-fs {
@@ -70,14 +70,35 @@
 
 .div-style {
     /* background-color: red; */
-    width: 150px;
-    height: 150px;
-    border-radius: 8px;
+    width: 200px;
+    height: 190px;
+    border-radius: 30px;
 }
 
 .main-content {
+    width: 40%;
     padding: 30px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
 }
+.center-content{
+    background-color: var(--dark-color);
+   display: flex;
+   justify-content: center;
+}
+
+.active-class{
+ background-color: var(--steel-blue);
+    color: var(--white-color);
+}
+.main-content div:hover{
+    cursor: pointer;
+}
+.main-content div{
+    opacity: 1;
+    transition: all .5s;
+}
+/* .main-content-2{
+    display: none;
+} */
