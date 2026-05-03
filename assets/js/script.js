@@ -11,6 +11,7 @@ function createRandomColor() {
     return arr;
 }
 let trueColor = createRandomColor();
+// console.log(trueColor);
 rgbHeader.textContent = `rgb(${trueColor[0]}, ${trueColor[1]}, ${trueColor[2]})`;
 
 // CREATE BOX (with color array)
@@ -119,7 +120,7 @@ function setClickEffect() {
         element.addEventListener("click", function () {
             console.log("test");
             if (element.style.backgroundColor === rgbHeader.textContent) {
-                comment.textContent = "Correct";
+                comment.textContent = "Correct!";
                 headerBg.style.backgroundColor = `${element.style.backgroundColor}`;
                 newColorBtn.textContent = "PLAY AGAIN?";
                 for (const item of allColorCards) {
