@@ -150,3 +150,17 @@ body {
     display: flex;
     align-items: center;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #48c0c4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ca75eb;
+}
